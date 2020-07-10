@@ -1,0 +1,210 @@
+    /* colors
+    midnight green: #005059
+    metallic seaweed: #08808E
+    middle blue: #7AC9D0
+    powder blue: #C8E8EA
+    vivid tangerine: #FE9A84 */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Quicksand', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    
+    header {
+        display: inline;
+    }
+    
+    .navbar {
+        position: sticky;
+        top: 0;
+    }
+    /* edit lagi logonya sampe navbar semuanya*/
+    
+    .logo {
+        position: relative;
+        margin-right: 60%;
+        left: 0;
+    }
+    
+    .logo img {
+        height: 50px;
+    }
+    
+    .logo img,
+    .logo p {
+        display: inline;
+    }
+    
+    .logo p {
+        position: relative;
+        bottom: 18px;
+    }
+    
+    nav {
+        background-color: #005059;
+        padding: 2px;
+        z-index: 1;
+    }
+    
+    nav a {
+        font-size: 16px;
+        font-weight: 400;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-decoration: none;
+        color: rgb(255, 181, 97);
+    }
+    
+    nav a:hover {
+        font-weight: bold;
+        color: rgb(255, 217, 46);
+    }
+    
+    nav li {
+        display: inline;
+        list-style-type: none;
+        margin-right: 20px;
+    }
+    
+    .navbar-menu {
+        position: relative;
+        bottom: 18px;
+    }
+    
+    main {
+        padding: 0px;
+        margin: 0px;
+        overflow: auto;
+    }
+    
+    #profile {
+        background-color: #005059;
+        padding: 20px 40px 40px 40px;
+        overflow: auto;
+        clear: both;
+    }
+    
+    #profile h2 {
+        color: white;
+    }
+    
+    .description {
+        font-family: 'Trebuchet MS';
+        font-size: 1.3rem;
+        color: ivory;
+        float: left;
+        width: 75%;
+        padding: 80px;
+    }
+    
+    #author {
+        text-align: center;
+        float: right;
+        width: 25%;
+        padding-left: 20px;
+        z-index: 0;
+    }
+    
+    figcaption {
+        padding: 10px;
+    }
+    
+    aside img {
+        width: 180px;
+        max-width: 200px;
+    }
+    
+    #content {
+        width: 100%;
+        padding-left: 15%;
+        padding-right: 15%;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        background-color: rgb(215, 236, 238);
+    }
+    
+    h2 {
+        color: #08808E;
+    }
+    
+    h3 {
+        color: #00a2c6
+    }
+    
+    .content-image {
+        width: 100%;
+        max-height: 500px;
+        min-width: 200px;
+        object-fit: cover;
+        object-position: center;
+    }
+    
+    footer {
+        padding: 20px;
+        color: white;
+        background-color: #005059;
+        text-align: center;
+        font-weight: bold;
+    }
+    
+    .box {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        border-radius: 5px;
+        padding: 30px;
+        margin-top: 30px;
+        border-width: 4px;
+        border-style: solid;
+        border-color: #7AC9D0;
+    }
+    
+    #activities img {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .activity {
+        margin-bottom: 50px;
+    }
+    
+    #skills section {
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        margin: 0 auto;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    
+    .skill-image {
+        width: 120px;
+    }
+    
+    .skill {
+        /*border: 2px solid black;*/
+        text-align: center;
+        flex-grow: 1;
+    }
+    
+    @media screen and (max-width: 1000px) {
+        .description,
+        #author {
+            padding: 0;
+            width: 100%;
+            max-width: 400px;
+            float: none;
+        }
+        #author table {
+            margin: 0 auto;
+            padding: 30px;
+        }
+        #skills section {
+            display: block;
+        }
+        .skill {
+            width: 100%;
+        }
+    }
