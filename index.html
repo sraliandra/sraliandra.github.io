@@ -1,53 +1,123 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id" translate="yes">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabila Rafani Aliandra</title>
-    <link rel="icon" href="profil.png" type="image/png">
-    <style>
-        .logo img {
-            margin: auto;
-            height: 50px;
-            background-size: auto;
-        }
-        img {
-            margin: auto;
-            height: 50px;
-            background-size: auto;
-        }
-        .logo:hover {
-            background: yellow;
-    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rafa Liandra | Web Developer</title>
 </head>
+
 <body>
     <header>
-        <div class="logo">
-            <img src="profil.png">
-        </div>
-        <div class="navigasi">
+        <nav class="navbar">
             <ul>
-                <li>Project</li>
-                <li>Blog</li>
-                <li>Activities</li>
-                <li>Contact</li>
+                <li class="logo">
+                    <a href="index.html"><img src="rafa.png">
+                        <p>Rafaliandra</p>
+                    </a>
+                </li>
+                <li class="navbar-menu"><a href="#projects">Projects</a></li>
+                <li class="navbar-menu"><a href="#activities">Activities</a></li>
+                <li class="navbar-menu"><a href="#skills">Skills</a></li>
+                <li class="navbar-menu"><a href="#contact">Contact</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <div>
-                <p>Cheerio! It's me, Sabila Rafani Aliandra</p>
-                <p>Technology Entrepreneur Who Implements IT on Social Life</p>
-                <p>description of myself</p>
+        <div id="profile">
+            <div class="description">
+                <h2>Hello, I'm Rafa Liandra</h2>
+                <h1>Web Designer Who Wants to Realize Economic Equality</h1>
+                <p>Being a web designer is one way I create products that can provide a variety of superior software to meet the needs of community economic activities.</p>
             </div>
-            <div>
-                <img>
-                <img>
-                <img>
-                <img>
-            </div>
-        </section>
+            <aside id="author" class="box">
+                <figure>
+                    <figcaption>Rafa Liandra <br> Web Designer</figcaption>
+                    <img src="/rafa.png" alt="Foto Rafa Liandra">
+                </figure>
+                <table>
+                    <tr>
+                        <th>Name</th>
+                        <td>Sabila Rafani Aliandra</td>
+                    </tr>
+                    <tr>
+                        <th>Gender</th>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                        <th>Nationality</th>
+                        <td>Indonesia</td>
+                    </tr>
+                    <tr>
+                        <th>Education</th>
+                        <td>S-1 Informatika UPN Veteran Jakarta (2018 -- now)</td>
+                    </tr>
+                    <tr>
+                        <th>Address</th>
+                        <td>Bekasi, West Java</td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+
+        <div id="content">
+            <article id="projects" class="box">
+                <h2>Projects</h2>
+                <section class="project jejakwarna">
+                    <h3>Website: Jejak Warna Literacy Community</h3>
+                    <a href="http://jejakwarna.id/about" target="__blank"> <img src="jejakwarna.jpg" class="content-image" alt="Proyek website komunitas literasi Jejak Warna"> </a>
+                    <p></p>
+                </section>
+            </article>
+            <article id="activities" class="box">
+                <h2>Activities</h2>
+                <section class="activity bem">
+                    <h3>Student Executive Board of UPN Veteran Jakarta 2019 </h3>
+                    <img src="bem.jpg" class="content-image" alt="Aktivitas Rafa di kegiatan BEM UPNVJ 2020">
+                    <p></p>
+                </section>
+                <!--
+                <section class="activity multimedia">
+                    <h3>Student Learning Club of Multimedia</h3>
+                    <img src="jejakwarna_wallpaper.jpeg" class="content-image" alt="Aktivitas Rafa di kegiatan KSM Multimedia UPNVJ">
+                    <p></p>
+                </section> -->
+                <section class="activity mc">
+                    <h3>Student Activity Unit of Master of Ceremony </h3>
+                    <img src="mc.jpeg" class="content-image" alt="Aktivitas Rafa di kegiatan UKM MC UPNVJ">
+                    <p></p>
+                </section>
+                <section class="activity youlead">
+                    <h3>Youlead Club Indonesia Community</h3>
+                    <img src="youlead.jpeg" class="content-image" alt="Aktivitas Rafa di kegiatan komunitas Youlead Club Indonesia">
+                    <p></p>
+                </section>
+            </article>
+            <article id="skills" class="box">
+                <h2>Skills</h2>
+                <section>
+                    <div class="skill">
+                        <h3>HTML</h3>
+                        <img src="html.png" class="skill-image html" alt="HTML5">
+                    </div>
+                    <div class="skill">
+                        <h3>CSS</h3>
+                        <img src="css.png" class="skill-image css" alt="CSS3">
+                    </div>
+                    <div class="skill">
+                        <h3>Adobe XD</h3>
+                        <img src="images/adobe-xd.svg" class="skill-image adobe-xd" alt="CSS3">
+                    </div>
+                </section>
+            </article>
+        </div>
     </main>
+    <footer>
+        <p>Sabila Rafani Aliandra &copy; 2020 </p>
+    </footer>
+    <script></script>
 </body>
+
 </html>
